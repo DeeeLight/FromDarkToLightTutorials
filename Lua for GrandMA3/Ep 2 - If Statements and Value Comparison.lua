@@ -6,7 +6,7 @@ function main()
     elseif (myVar > 35 and myVar < 40) then
         Printf('myVar is more than 35')
     else
-        Print('Number is too large')
+        Printf('Number is too large')
     end
     
     local Answer = Confirm('Hey', 'Confirm me!')
