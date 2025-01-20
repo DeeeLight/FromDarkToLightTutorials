@@ -20,7 +20,7 @@ function main()
 
   local ConfirmServiceFlow = MessageBox({
     title = 'Confirm',
-    message_align_h = Enums.message_alignmentH.Left,
+    message_align_h = Enums.AlignmentH.Left,
     message = 'Is this the right service flow for today?\n\t' .. SermonDefaults[1] .. '\n\t' .. SermonDefaults[2] .. '\n\t' .. SermonDefaults[3] .. '\n\t' .. SermonDefaults[4] .. '\n\t' .. SermonDefaults[5],
     commands = {{value = 1, name = 'Yes'}, {value = 0, name = 'No'}}
   })
@@ -32,7 +32,7 @@ function main()
   else
     local ManualSetup = MessageBox({
     title = 'Set Up Post-Worship',
-      message_align_h = Enums.message_alignmentH.Left,
+      message_align_h = Enums.AlignmentH.Left,
       message = 'These are the names of the sequences which can be used for service.\n\t' .. SermonDefaults[1] .. '\n\t' .. SermonDefaults[2] .. '\n\t' .. SermonDefaults[3] .. '\n\t' .. SermonDefaults[4] .. '\n\t' .. SermonDefaults[5] .. '\nPlease type the name of each element in the box for its place in the sevice flow.',
       commands = {{value = 1, name = 'Confirm'}},
       inputs = {{name = 'Sequence 1', vkPlugin = 'TextInput', maxTextLength = 50}, {name = 'Sequence 2', vkPlugin = 'TextInput', maxTextLength = 50},{name = 'Sequence 3', vkPlugin = 'TextInput', maxTextLength = 50},{name = 'Sequence 4', vkPlugin = 'TextInput', maxTextLength = 50},{name = 'Sequence 5', vkPlugin = 'TextInput', maxTextLength = 50}}
