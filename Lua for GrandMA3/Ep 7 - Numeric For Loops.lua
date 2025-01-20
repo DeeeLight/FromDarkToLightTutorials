@@ -5,7 +5,7 @@ function main()
 
   if (IsObjectValid(FromAddr('Sequences.Praise', DataPool()))) then
     mySongList = {'Praise'}
-    for i = 1, 100 do
+    for i = 1, 100 do -- This should have been 2, 100 so it would start with 2.
       if (IsObjectValid(FromAddr('Sequences.Praise#' .. i, DataPool()))) then
         table.insert(mySongList, 'Praise#' .. i)
       else
