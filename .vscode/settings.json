@@ -1,0 +1,9 @@
+{
+  "grandMa3.apiVersion": "2.1",
+  "Lua.workspace.library": [
+    "c:\\Users\\From Dark To Light\\.vscode\\extensions\\carrot-industries.ma3-lua-api-1.1.1\\resources\\2.1"
+  ],
+  "Lua.diagnostics.disable": [
+    "undefined-field"
+  ]
+}
