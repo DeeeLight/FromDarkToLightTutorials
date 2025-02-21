@@ -10,7 +10,7 @@ function Main()
   --Handle.name = 'Test'
 
   --[[Printf('----------Beginning of Dump-------------')
-  Printf(tostring(Handle:Dump()))
+  Handle:Dump() -- I changed this after it was pointed out to me that Dump prints on its own, so my overlapping text in the cmd history was caused by 2 simultaneous prints.
   Printf('----------End of Dump-----------------')]]
 end
 return Main
