@@ -1,3 +1,4 @@
+--Note: The number 13 for ShowData and DataPools has been changed to 14 in v2.2
 function Main()
   local mySequenceHandle = FromAddr("ShowData.DataPools.Default.Sequences.1")
   Printf(tostring(mySequenceHandle))
