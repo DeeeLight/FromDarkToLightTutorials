@@ -1,6 +1,3 @@
---<version="1.0"/version>
---<build="6"/build>
-
 function Main(display, arg)
   --Printf(arg)
 
