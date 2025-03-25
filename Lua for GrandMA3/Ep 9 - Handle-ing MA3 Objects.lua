@@ -1,3 +1,4 @@
+--Note: The number 13 for ShowData and DataPools has been changed to 14 in v2.2
 function Main()
   local mySequenceHandle = FromAddr("ShowData.DataPools.Default.Sequences.1")
   Printf(tostring(mySequenceHandle))
@@ -10,7 +11,7 @@ function Main()
   --Handle.name = 'Test'
 
   --[[Printf('----------Beginning of Dump-------------')
-  Printf(tostring(Handle:Dump()))
+  Handle:Dump() -- I changed this after it was pointed out to me that Dump prints on its own, so my overlapping text in the cmd history was caused by 2 simultaneous prints.
   Printf('----------End of Dump-----------------')]]
 end
 return Main
